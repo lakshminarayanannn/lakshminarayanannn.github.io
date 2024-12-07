@@ -1,3 +1,3 @@
-# praveenmylavarapu.github.io
+# lakshminarayanannnn.github.io
 
 My Github page
