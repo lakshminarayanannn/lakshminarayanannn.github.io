@@ -4,7 +4,7 @@ description: >
   Hi There, My name is Lakshminarayanan Ravi. Welcome to my home in the Internet.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://lakshminarayanannn.github.io/lakshminarayananaravi.github.io/" # the base hostname & protocol for your site
+url: "lakshminarayananaravi.github.io/" # the base hostname & protocol for your site
 
 author:
   fullname: LakshminarayananRavi

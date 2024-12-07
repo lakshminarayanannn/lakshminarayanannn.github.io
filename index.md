@@ -15,6 +15,6 @@ sitemap:
 }
 </style>
 
-<img src="/assets/img/Lakshmi.jpg" class="center" alt="Lakshminarayanan Ravi"/>
+<img src="./assets/img/Lakshmi.jpg" class="center" alt="Lakshminarayanan Ravi"/>
 
 {% include README.md %}
