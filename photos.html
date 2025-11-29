@@ -10,8 +10,17 @@ permalink: /photos.html
   <div class="photos-grid">
     {% assign photos = site.photos | sort: 'date' | reverse %}
     {% for photo in photos %}
+      {% assign photo_image_url = nil %}
+      {% assign photo_image = photo.image %}
+      {% if photo_image %}
+        {% if photo_image contains '://' %}
+          {% assign photo_image_url = photo_image %}
+        {% else %}
+          {% assign photo_image_url = photo_image | relative_url %}
+        {% endif %}
+      {% endif %}
       <a class="photo-item" href="{{ photo.url | relative_url }}" style="grid-row: {% if photo.aspect == 'portrait' %}span 2{% else %}span 1{% endif %};">
-        <div class="photo-item__image" style="background: {{ photo.gradient }};"></div>
+        <div class="photo-item__image" style="background: {{ photo.gradient }};{% if photo_image_url %} background-image: url('{{ photo_image_url }}');{% endif %}"></div>
         <div class="photo-overlay">
           <span class="photo-overlay__location">{{ photo.location }}, {{ photo.date | date: '%b %Y' }}</span>
           <span class="photo-overlay__device">{{ photo.device }}</span>
