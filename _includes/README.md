@@ -1,17 +1,17 @@
 ### Hi there, I am Lakshminarayanan Ravi.
 
-- 💻 Software Engineer with experience at KLA Corporation and research in Deep Learning at PSG College of Technology.
-- 🎓 Pursuing an MS in Software Engineering at Northeastern University and completed an integrated MS in Theoretical Computer Science from PSG College of Technology.
-- 🌐 Passionate about Mathematics, AI Agents, Generative AI, scalable system design and staying updated with advancements in AI and machine learning.
-- 📚 Currently exploring: Agentic Workflow, Quantitative Trading strategies, financial modeling, and algorithmic trading.
-- 💬 Ask me about: Distributed systems, modern application frameworks, deep learning models, and competitive programming.
-- 🏅 Achievements in ICPC competitions:
-  - ICPC Asia Regionals: 2022 Amritapuri Doublesite Regional Contest - Honorable Mention (Team: AlgoQube, Rank: 66).
-  - Consistently secured top 50 ranks in CodeChef contests.
-  - Top Ranked 377 in Codeforces contest.
-- 📧 Reach me via: Email at [ravi.l@northeastern.edu](mailto:ravi.l@northeastern.edu) or DM on LinkedIn.
+- 💻 AI Software Engineer with GPU optimization and agentic systems expertise at KLA Corporation; researcher in Deep Learning at PSG College of Technology.
+- 🎓 Pursuing MS in Software Engineering at Northeastern University; completed integrated MS in Theoretical Computer Science from PSG College of Technology.
+- 🚀 Transforming from CUDA Engineer to AI Solutions Architect—building scalable AI products and high-performance systems.
+- 🌐 Passionate about AI Agents, Generative AI, GPU acceleration, quantitative trading, and scalable system design.
+- 🔬 Expanding knowledge in: Neuroscience, brain architecture, memory systems, genetics, and theory of evolution.
+- 📚 Currently exploring: Agentic workflows, multi-agent systems, RAG, LangChain/LangGraph, and algorithmic trading.
+- 💬 Ask me about: CUDA optimization, distributed systems, AI frameworks, deep learning models, and competitive programming.
+- 🏅 ICPC Asia Regionals 2022 - Rank 66 (Team: AlgoQube, Honorable Mention); Top 50 in CodeChef contests; Rank 377 in Codeforces.
+- 📧 Reach me: [ravi.l@northeastern.edu](mailto:ravi.l@northeastern.edu) or DM on LinkedIn.
 - 🌍 Fun fact: I can spin like crazy for hours without fainting!
-- 🕸️ Check out my GitHub: [Linkedin](https://www.linkedin.com/in/r-lakshminarayanan/)
-- 📄 View my resume here: [Resume](https://lakshminarayanannn.github.io/resume/)
+- 🕸️ GitHub: [lakshminarayanannn](https://github.com/lakshminarayanannn)
+- 📄 Resume: [View Here](https://lakshminarayanannn.github.io/resume/)
 
-#### Find me on: [LinkedIn](https://linkedin.com/in/r-lakshminarayanan/) | [GitHub](https://github.com/lakshminarayanannn) | [Codeforces](https://codeforces.com/profile/zapdospops) | [CodeChef](https://www.codechef.com/users/zapdospops) | [StopStalk](https://www.stopstalk.com/user/profile/zapdospops) 
+#### Find me on:
+[LinkedIn](https://linkedin.com/in/r-lakshminarayanan/) | [GitHub](https://github.com/lakshminarayanannn) | [Codeforces](https://codeforces.com/profile/zapdospops) | [CodeChef](https://www.codechef.com/users/zapdospops) | [StopStalk](https://www.stopstalk.com/user/profile/zapdospops)
