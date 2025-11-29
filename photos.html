@@ -1,0 +1,22 @@
+---
+layout: default
+title: Photos
+permalink: /photos.html
+---
+<section class="photos">
+  <div class="photos__header">
+    <p class="photos__subtitle">A selection of my favourite photos</p>
+  </div>
+  <div class="photos-grid">
+    {% assign photos = site.photos | sort: 'date' | reverse %}
+    {% for photo in photos %}
+      <a class="photo-item" href="{{ photo.url | relative_url }}" style="grid-row: {% if photo.aspect == 'portrait' %}span 2{% else %}span 1{% endif %};">
+        <div class="photo-item__image" style="background: {{ photo.gradient }};"></div>
+        <div class="photo-overlay">
+          <span class="photo-overlay__location">{{ photo.location }}, {{ photo.date | date: '%b %Y' }}</span>
+          <span class="photo-overlay__device">{{ photo.device }}</span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

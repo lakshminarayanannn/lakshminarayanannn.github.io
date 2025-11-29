@@ -1,0 +1,19 @@
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="logo" href="{{ '/' | relative_url }}">
+      <span class="logo__icon">◧</span>
+    </a>
+    <div class="nav__links">
+      <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav-link{% if page.url contains '/work' %} active{% endif %}" href="{{ '/work.html' | relative_url }}">Work</a>
+      <a class="nav-link{% if page.url contains '/blogs' or page.collection == 'posts' %} active{% endif %}" href="{{ '/blogs.html' | relative_url }}">Blogs</a>
+      <a class="nav-link{% if page.url contains '/microblog' or page.collection == 'microblog' %} active{% endif %}" href="{{ '/microblog.html' | relative_url }}">Microblog</a>
+      <a class="nav-link{% if page.url contains '/photos' or page.collection == 'photos' %} active{% endif %}" href="{{ '/photos.html' | relative_url }}">Photos</a>
+    </div>
+    <div class="nav__right">
+      <span class="nav__right-text">Elsewhere —</span>
+      <a class="external-link" href="{{ site.data.site.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a class="external-link" href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</nav>

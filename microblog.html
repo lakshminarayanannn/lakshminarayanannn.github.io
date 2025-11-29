@@ -1,0 +1,21 @@
+---
+layout: default
+title: Microblog
+permalink: /microblog.html
+---
+<section class="microblog">
+  <div class="microblog__header">
+    <h1 class="microblog__title">Microblog</h1>
+    <p class="microblog__subtitle">Short-form thoughts, notes, and observations.</p>
+  </div>
+  <div class="microblog-grid">
+    {% assign posts = site.microblog | sort: 'date' | reverse %}
+    {% for post in posts %}
+      <div class="microblog-card">
+        <h4 class="microblog-card__title">{{ post.title }}</h4>
+        <p class="microblog-card__content">{{ post.content | default: post.excerpt | strip_html }}</p>
+        <span class="microblog-card__date">{{ post.date | date: '%b %d, %Y' }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
