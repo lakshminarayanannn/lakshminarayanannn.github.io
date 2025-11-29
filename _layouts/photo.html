@@ -2,7 +2,22 @@
 layout: default
 ---
 <section class="photo-page">
-  <div class="photo-page__image" style="background: {{ page.gradient }};"></div>
+  {% assign photo_image_url = nil %}
+  {% assign photo_image = page.image %}
+  {% if photo_image %}
+    {% if photo_image contains '://' %}
+      {% assign photo_image_url = photo_image %}
+    {% else %}
+      {% assign photo_image_url = photo_image | relative_url %}
+    {% endif %}
+  {% endif %}
+  <div class="photo-page__image" style="background: {{ page.gradient }};">
+    {% if photo_image_url %}
+      <img class="photo-page__img" src="{{ photo_image_url }}" alt="{{ page.title }}">
+    {% else %}
+      <div class="photo-page__placeholder"></div>
+    {% endif %}
+  </div>
   <div class="photo-page__info">
     <h1 class="photo-page__title">{{ page.title }}</h1>
     <div class="photo-page__meta">

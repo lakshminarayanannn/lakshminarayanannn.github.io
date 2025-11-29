@@ -9,7 +9,7 @@
 <body>
   <div class="page">
     {% include nav.html %}
-    <main class="main">
+    <main class="main{% if page.main_class %} {{ page.main_class }}{% endif %}">
       {{ content }}
     </main>
     {% include footer.html %}
