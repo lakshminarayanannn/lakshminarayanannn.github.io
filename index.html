@@ -1,0 +1,54 @@
+---
+layout: default
+permalink: /
+---
+<section class="hero">
+  <h1 class="hero__name">{{ site.data.site.name }}</h1>
+  <p class="hero__tagline">{{ site.data.site.tagline }} Currently pursuing MS at Northeastern, previously engineering at KLA Corporation.</p>
+  <div class="hero__meta">
+    <span class="hero__badge">{{ site.data.site.badge }}</span>
+  </div>
+</section>
+
+<section class="blog-list">
+  {% assign recent_posts = site.posts | slice: 0, 6 %}
+  {% for post in recent_posts %}
+    <a class="blog-item" href="{{ post.url | relative_url }}">
+      <span class="blog-item__title">{{ post.title }}</span>
+      <span class="blog-item__meta">
+        <span class="blog-item__category">{{ post.category }}</span>
+        <span class="blog-item__sep">~</span>
+        <span class="blog-item__year">{{ post.date | date: '%Y' }}</span>
+      </span>
+    </a>
+  {% endfor %}
+</section>
+
+<section class="microblog-preview">
+  <h3 class="section-label">From the microblog</h3>
+  {% assign latest_microblog = site.microblog | sort: 'date' | reverse | first %}
+  {% if latest_microblog %}
+    <div class="microblog-card">
+      <h4 class="microblog-card__title">{{ latest_microblog.title }}</h4>
+      <p class="microblog-card__content">{{ latest_microblog.content | default: latest_microblog.excerpt | strip_html }}</p>
+      <span class="microblog-card__date">{{ latest_microblog.date | date: '%b %d, %Y' }}</span>
+    </div>
+  {% endif %}
+</section>
+
+<section class="featured">
+  <h3 class="section-label">Featured work</h3>
+  {% assign ordered_work = site.work | sort: 'order' %}
+  {% for item in ordered_work limit:2 %}
+    <div class="featured-item">
+      <div class="featured-item__left">
+        <span class="featured-item__title">{{ item.title }}</span>
+        <span class="featured-item__desc">{{ item.category | default: item.type | upcase }} • {{ item.summary | default: item.company }}</span>
+      </div>
+      <div class="featured-item__right">
+        <span class="featured-item__role">{{ item.type }}</span>
+        <span class="featured-item__year">{{ item.year }}</span>
+      </div>
+    </div>
+  {% endfor %}
+</section>
