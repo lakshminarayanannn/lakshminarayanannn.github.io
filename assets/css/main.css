@@ -466,7 +466,13 @@ a { color: inherit; text-decoration: none; }
 
 .photo-item:hover { transform: scale(1.02); }
 
-.photo-item__image { width: 100%; padding-top: 75%; }
+.photo-item__image {
+  width: 100%;
+  padding-top: 75%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .photo-overlay {
   position: absolute;
@@ -501,6 +507,9 @@ a { color: inherit; text-decoration: none; }
   padding-top: 66%;
   border-radius: 8px;
   margin-bottom: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .photo-page__title { font-size: 24px; font-weight: 600; margin-bottom: 12px; }
