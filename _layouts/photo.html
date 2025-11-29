@@ -11,7 +11,9 @@ layout: default
       {% assign photo_image_url = photo_image | relative_url %}
     {% endif %}
   {% endif %}
-  <div class="photo-page__image" style="background: {{ page.gradient }};{% if photo_image_url %} background-image: url('{{ photo_image_url }}');{% endif %}"></div>
+  <div class="photo-page__container">
+    <img class="photo-page__image" src="{{ photo_image_url }}" alt="{{ page.title }}">
+  </div>
   <div class="photo-page__info">
     <h1 class="photo-page__title">{{ page.title }}</h1>
     <div class="photo-page__meta">

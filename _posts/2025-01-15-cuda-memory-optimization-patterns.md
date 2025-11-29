@@ -13,3 +13,5 @@ This is where the full blog content would go. The design focuses on readability 
 > Good design is as little design as possible. Less, but better.
 
 Each blog post can contain images, code snippets, and rich formatting while maintaining the clean, focused reading experience.
+
+> Lakshminarayanan

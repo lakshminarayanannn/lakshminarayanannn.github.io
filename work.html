@@ -6,31 +6,41 @@ permalink: /work.html
 <section class="work">
   <div class="work__highlights">
     <h2 class="work__highlights-title">Highlights</h2>
-    <p class="work__highlights-text">I build high-performance systems and AI applications. Passionate about bridging the gap between cutting-edge research and practical engineering.</p>
-    <p class="work__highlights-text">Currently pursuing MS in Software Engineering at <span class="inline-link">Northeastern University</span>, with prior experience at <span class="inline-link">KLA Corporation</span> working on GPU-accelerated inspection systems and AI-powered analytics.</p>
+    <p class="work__highlights-text">I build software that thinks. Backend systems, ML pipelines, autonomous agents,
+      engineering intelligence from architecture to deployment.</p>
+    <p class="work__highlights-text">Grad student at <span class="inline-link">Northeastern University</span> (MS '26).
+      Ex-<span class="inline-link">KLA Corporation</span> engineer. I don't demo—I deploy.</p>
   </div>
 
   {% assign sorted_work = site.work | sort: 'order' %}
   {% assign grouped = sorted_work | group_by: 'year' %}
   <div class="timeline">
     {% for period in grouped %}
-      <div class="timeline__period">
-        <div class="timeline__year">{{ period.name }}</div>
-        <div class="timeline__items">
-          {% for item in period.items %}
-            <div class="work-item">
-              <div class="work-item__header">
-                <h3 class="work-item__title">{{ item.title }}</h3>
-                <span class="work-item__type">{{ item.type }}</span>
-              </div>
-              <div class="work-item__company">{{ item.company }} • {{ item.location }}</div>
-              <div class="work-item__points">
-                {{ item.content | markdownify }}
-              </div>
+    <div class="timeline__period">
+      <div class="timeline__year">{{ period.name }}</div>
+      <div class="timeline__items">
+        {% for item in period.items %}
+        <div class="work-item">
+          {% if item.logo %}
+          <div class="work-item__logo-container">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.company }} logo" class="work-item__logo" />
+          </div>
+          {% endif %}
+          <div class="work-item__content">
+            <div class="work-item__header">
+              <h3 class="work-item__title">{{ item.title }}</h3>
+              <span class="work-item__type">{{ item.type }}</span>
             </div>
-          {% endfor %}
+            <div class="work-item__company">{{ item.company }} • {{ item.location }}</div>
+            <div class="work-item__points">
+              {{ item.content | markdownify }}
+            </div>
+          </div>
         </div>
+        {% endfor %}
       </div>
+    </div>
     {% endfor %}
   </div>
 </section>
+```
